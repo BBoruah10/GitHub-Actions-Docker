@@ -45,7 +45,7 @@ jobs:
             org.opencontainers.image.source=${{ github.repository }}
             org.opencontainers.image.revision=${{ github.sha }}
 
-      # 🚀 Build + push (multi-arch + cache)
+      # 🚀 Build + push (multi-arch + cache)}
       - name: Build and push
         uses: docker/build-push-action@v5
         with:
