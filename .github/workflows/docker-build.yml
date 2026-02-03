@@ -34,7 +34,7 @@ jobs:
         id: meta
         uses: docker/metadata-action@v5
         with:
-          images: yourdockerhubusername/yourapp
+          images: bhaskarboruah/myapp
           tags: |
             type=semver,pattern={{version}}
             type=semver,pattern={{major}}.{{minor}}
