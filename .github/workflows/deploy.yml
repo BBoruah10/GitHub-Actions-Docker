@@ -48,6 +48,6 @@ jobs:
       # Replace image tag + deploy EVERYTHING
       - name: Deploy to Kubernetes
         run: |
-          sed -i "s|IMAGE_TAG|${{ steps.tag.outputs.version }}|g" k8s/deployment.yml
-          kubectl apply -f k8s/
+          sed -i "s|IMAGE_TAG|${{ steps.tag.outputs.version }}|g" K8s/deployment.yml
+          kubectl apply -f K8s/
           kubectl rollout status deployment action-deploy
